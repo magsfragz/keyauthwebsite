@@ -20,37 +20,37 @@ if (isset($_SESSION['username'])) {
 
 <head>
     <base href="">
-    <title>Keyauth - Login</title>
+    <title>CeoAuth - Login</title>
     <meta charset="utf-8" />
     <!-- Canonical SEO -->
-    <link rel="canonical" href="https://keyauth.cc" />
+    <link rel="canonical" href="https://CeoAuth.cc" />
 
     <meta content="Secure your software against piracy, an issue causing $422 million in losses anually - Fair pricing & Features not seen in competitors" name="description" />
-    <meta content="KeyAuth" name="author" />
+    <meta content="CeoAuth" name="author" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="KeyAuth, Cloud Authentication, Key Authentication,Authentication, API authentication,Security, Encryption authentication, Authenticated encryption, Cybersecurity, Developer, SaaS, Software Licensing, Licensing" />
+    <meta name="keywords" content="CeoAuth, Cloud Authentication, Key Authentication,Authentication, API authentication,Security, Encryption authentication, Authenticated encryption, Cybersecurity, Developer, SaaS, Software Licensing, Licensing" />
     <meta property=”og:description” content="Secure your software against piracy, an issue causing $422 million in losses anually - Fair pricing & Features not seen in competitors" />
     <meta property="og:image" content="https://cdn.keyauth.cc/front/assets/img/favicon.png" />
-    <meta property=”og:site_name” content="KeyAuth | Secure your software from piracy." />
+    <meta property=”og:site_name” content="CeoAuth | Secure your software from piracy." />
 
     <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="KeyAuth - Open Source Auth">
+    <meta itemprop="name" content="CeoAuth - Open Source Auth">
     <meta itemprop="description" content="Secure your software against piracy, an issue causing $422 million in losses anually - Fair pricing & Features not seen in competitors">
 
     <meta itemprop="image" content="https://cdn.keyauth.cc/front/assets/img/favicon.png">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="product">
-    <meta name="twitter:site" content="@keyauth">
-    <meta name="twitter:title" content="Keyauth - Login">
+    <meta name="twitter:site" content="@CeoAuth">
+    <meta name="twitter:title" content="CeoAuth - Login">
 
     <meta name="twitter:description" content="Secure your software against piracy, an issue causing $422 million in losses anually - Fair pricing & Features not seen in competitors">
-    <meta name="twitter:creator" content="@keyauth">
+    <meta name="twitter:creator" content="@CeoAuth">
     <meta name="twitter:image" content="https://cdn.keyauth.cc/front/assets/img/favicon.png">
 
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="Keyauth - Login" />
+    <meta property="og:title" content="CeoAuth - Login" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="./" />
     <link rel="shortcut icon" href="https://cdn.keyauth.cc/v2/assets/media/logos/favicon.ico" />
@@ -115,7 +115,7 @@ if (isset($_SESSION['username'])) {
                         <!--begin::Heading-->
                         <div class="text-center mb-10">
                             <!--begin::Title-->
-                            <h1 class="text-light mb-3">Sign In to Keyauth</h1>
+                            <h1 class="text-light mb-3">Sign In to CeoAuth</h1>
                             <!--end::Title-->
                             <!--begin::Link-->
                             <div class="text-gray-400 fw-bold fs-4">New Here?
@@ -157,7 +157,7 @@ if (isset($_SESSION['username'])) {
                                 <label class="form-label fs-6 fw-bolder text-light">2FA</label>
                                 <!--end::Label-->
                                 <!--begin::Input-->
-                                <input class="form-control text-light" maxlength="6" placeholder="Two Factor Code (if applicable)" type="text" name="keyauthtwofactor" autocomplete="off" />
+                                <input class="form-control text-light" maxlength="6" placeholder="Two Factor Code (if applicable)" type="text" name="CeoAuthtwofactor" autocomplete="off" />
                                 <div class="form-group row">
                                     <!--end::Input-->
                                 </div>
@@ -269,7 +269,7 @@ if (isset($_SESSION['username'])) {
                 if ($asNum != $asNumSaved || $region != $regionSaved) {
                     if ($twofactor_optional) {
                         // 2FA verification on new login location
-                        $twofactor = misc\etc\sanitize($_POST['keyauthtwofactor']);
+                        $twofactor = misc\etc\sanitize($_POST['CeoAuthtwofactor']);
                         if (empty($twofactor)) {
                             dashboard\primary\error("Please enter 2FA code!");
                             return;
